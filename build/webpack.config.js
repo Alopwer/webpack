@@ -47,7 +47,7 @@ const PATHS = {
 
 module.exports = {
     entry : {
-        main: ['@babel/polyfill', '~src/js/index.js']
+        main: '~src/js/index.js'
     },
     output : {
         filename : '[name].[hash].js',
