@@ -5,14 +5,14 @@ const baseConfig = require('./webpack.config');
 const devConfig = merge(baseConfig, {
     mode: 'development',
     output: {
-        filename: '[name].js',
-        publicPath: '/'
+        filename: 'js/[name].js',
     },
     devtool: 'cheap-module-eval-source-map',
     devServer: {
         port: 8082,
-        contentBase: path.resolve(__dirname, '../dist/html'),
-        overlay: true
+        contentBase: path.resolve(__dirname, '../dist'),
+        overlay: true,
+        openPage: 'html'
     }
 })
 
