@@ -1,0 +1,10 @@
+@import '_vars.scss';
+@import '_mixins.scss';
+@import '_fonts.scss';
+@import 'css-reset-and-normalize';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
